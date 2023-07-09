@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>WeatherApplication</title>
+</head>
+<body>
+    <div class="card">
+        <!--search box-->
+        <div class="search">
+            <input type="text"  placeholder="Enter your city" spellcheck="false">
+            <button onclick="animate"><img class="search__button--img" src="./images/search.png"></button>
+
+        </div>
+
+        <div class="error-msg">
+           <p>City Not Found 🤔</p> 
+        </div>
+        <!--weather details-->
+        <div class="weather-display">
+            <!--temperature and city-->
+            <img src="images/clear.png" class="weather-display__icon">
+            <h1 class="temp">41°c</h1>
+            <h2 class="city">Riyadh</h2>
+            <!--humidity and wind-->
+            <ul class="weather-display__details">
+                <li class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">2%</p>
+                        <p class="col__text">Humidity</p>
+                    </div>
+                </li>
+                <li class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">30kph</p>
+                        <p class="col__text">Wind Speed</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
